@@ -1,0 +1,189 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.nidhisakhala.calculator.MainActivity2"
+    >
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:inputType="number|numberDecimal|numberSigned"
+        android:ems="10"
+        android:id="@+id/input"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:hint="Enter number"
+        android:textSize="15dp"
+        android:paddingTop="5dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/output"
+        android:inputType="none"
+        android:textSize="20dp"
+        android:layout_below="@+id/input"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="sin"
+        android:id="@+id/sine"
+        android:layout_below="@+id/input"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="10dp"
+        android:textSize="20dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="cos"
+        android:id="@+id/cosine"
+        android:layout_alignTop="@+id/sine"
+        android:layout_toRightOf="@+id/sine"
+        android:layout_toEndOf="@+id/sine"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="20dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="tan"
+        android:id="@+id/tangent"
+        android:layout_alignTop="@+id/cosine"
+        android:layout_toRightOf="@+id/cosine"
+        android:layout_toEndOf="@+id/cosine"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentRight="false"
+        android:textSize="20dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="ln"
+        android:id="@+id/ln"
+        android:layout_below="@+id/sine"
+        android:layout_alignLeft="@+id/sine"
+        android:layout_alignStart="@+id/sine"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="20dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="log"
+        android:id="@+id/log"
+        android:layout_alignTop="@+id/ln"
+        android:layout_toRightOf="@+id/ln"
+        android:layout_toEndOf="@+id/ln"
+        android:textSize="20dp"
+        android:layout_alignParentLeft="false"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="e"
+        android:id="@+id/exponential"
+        android:layout_alignTop="@+id/log"
+        android:layout_toRightOf="@+id/cosine"
+        android:layout_toEndOf="@+id/cosine"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="^"
+        android:id="@+id/power"
+        android:layout_below="@+id/ln"
+        android:layout_alignLeft="@+id/ln"
+        android:layout_alignStart="@+id/ln"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="20dp" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="!"
+        android:id="@+id/factorial"
+        android:textSize="20dp"
+        android:layout_alignTop="@+id/power"
+        android:layout_toRightOf="@+id/power"
+        android:layout_toEndOf="@+id/power"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="root"
+        android:id="@+id/squareroot"
+        android:textSize="20dp"
+        android:layout_alignTop="@+id/factorial"
+        android:layout_toRightOf="@+id/factorial"
+        android:layout_toEndOf="@+id/factorial"
+        android:layout_marginLeft="10dp" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="pi"
+        android:id="@+id/pi"
+        android:layout_below="@+id/power"
+        android:layout_alignLeft="@+id/power"
+        android:layout_alignStart="@+id/power"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:layout_marginRight="10dp" />
+
+    <Button
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:text="clear"
+        android:id="@+id/clear"
+        android:textSize="20dp"
+        android:layout_alignTop="@+id/equal"
+        android:layout_toRightOf="@+id/equal"
+        android:layout_toEndOf="@+id/equal"
+        android:layout_marginLeft="15dp" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="="
+        android:id="@+id/equal"
+        android:textSize="20dp"
+        android:layout_alignTop="@+id/pi"
+        android:layout_toRightOf="@+id/pi"
+        android:layout_toEndOf="@+id/pi"
+        android:layout_marginLeft="10dp" />
+
+</RelativeLayout>
