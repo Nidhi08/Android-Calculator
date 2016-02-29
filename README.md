@@ -5,11 +5,11 @@ On the first sreen addition,multiplication,subtraction and division is available
 Some advanced functions available in the menu option.
 Instructions for use:
 
-1. for basic operations -
-  Enter the first number using the keypad.
-  Click on the button of the operation.
-  Enter the second number using the keypad.
-  Click on '=' to get the result.
+1. for basic operations -  
+  Enter the first number using the keypad.  
+  Click on the button of the operation.  
+  Enter the second number using the keypad.  
+  Click on '=' to get the result.  
 
 2. for trigonometric, log and ln functions - 
   Click on the button of the function.
